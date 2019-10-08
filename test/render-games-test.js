@@ -1,6 +1,7 @@
 // IMPORT MODULES under test here:
 // import example from '../src/example.js';
 import renderGames from '../products/render-games.js';
+// import { cart } from '../api.js';
 
 const test = QUnit.test;
 
