@@ -1,0 +1,49 @@
+body{
+    background-color:bisque;
+}
+h1{
+    font-family: 'ZCOOL XiaoWei', serif;
+    text-align: center;
+}
+#games{
+    font-family: 'Barlow', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none;
+    padding-left: 0;
+}
+
+#game-list{
+    width: 250px;
+    height: 350px;
+    padding: 20px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid black;
+    border-radius: 5px;
+    background-color: bisque;
+    color: black;
+}
+
+#game-category, #game-price, #game-description {
+    font-size: 14px;
+    padding: 2px;
+}
+
+img{
+    height: 200px;
+    margin: 5px;
+    border-radius: 8px;
+    border: 2px solid black;
+}
+
+button {
+    width: 50px;
+    height: 50px;
+    padding: 0.5px;
+}
