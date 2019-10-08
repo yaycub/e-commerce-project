@@ -11,7 +11,7 @@ export const gamesList = [
     {
         id: 'borderlands',
         name: 'Borderlands',
-        image: '../assets/borderlands.png',
+        image: '/assets/borderlands.png',
         description: 'An open-world First Person Shooter',
         category: 'FPS',
         price: 10
@@ -20,7 +20,7 @@ export const gamesList = [
     {
         id: 'super-mario',
         name: 'Super Mario Bros',
-        image: '../assets/mario.png',
+        image: '/assets/mario.png',
         description: 'A puzzle platformer',
         category: 'Platformer',
         price: 5
@@ -29,7 +29,7 @@ export const gamesList = [
     {
         id: 'space-harrier',
         name: 'Space Harrier',
-        image: '../assets/harrier.png',
+        image: '/assets/harrier.png',
         description: 'A 3d rail-on shoot-em-up',
         category: 'Rail-on Shooter',
         price: 100
