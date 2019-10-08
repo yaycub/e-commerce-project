@@ -1,10 +1,10 @@
 // IMPORT MODULES under test here:
 // import example from '../src/example.js';
-import renderGames from '../src/render-games.js';
+import renderGames from '../products/render-games.js';
 
 const test = QUnit.test;
 
-test('time to test a function', function(assert) {
+test('Render Games test', function(assert) {
     //Arrange
     // Set up your parameters and expectations
     const skyrim = {

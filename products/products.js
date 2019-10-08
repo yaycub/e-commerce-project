@@ -1,5 +1,5 @@
-import renderGames from '../src/render-games.js';
-import { gamesList } from './api.js';
+import renderGames from './render-games.js';
+import { gamesList } from '../api.js';
 
 const gamesListDisplay = document.getElementById('games');
 
