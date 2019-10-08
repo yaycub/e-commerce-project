@@ -28,5 +28,10 @@ export default (gameData) => {
     priceDiv.textContent = 'Price: $' + gameData.price;
     li.appendChild(priceDiv);
 
+    const addButton = document.createElement('button');
+    addButton.id = gameData.id;
+    addButton.textContent = 'Add';
+    li.appendChild(addButton);
+
     return li;
 };
