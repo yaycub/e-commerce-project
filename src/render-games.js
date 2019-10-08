@@ -15,17 +15,17 @@ export default (gameData) => {
 
     const descriptionDiv = document.createElement('div');
     descriptionDiv.id = 'game-description';
-    descriptionDiv.textContent = gameData.description;
+    descriptionDiv.textContent = 'Description: ' + gameData.description;
     li.appendChild(descriptionDiv);
 
     const categoryDiv = document.createElement('div');
     categoryDiv.id = 'game-category';
-    categoryDiv.textContent = gameData.category;
+    categoryDiv.textContent = 'Category: ' + gameData.category;
     li.appendChild(categoryDiv);
 
     const priceDiv = document.createElement('div');
     priceDiv.id = 'game-price';
-    priceDiv.textContent = '$' + gameData.price;
+    priceDiv.textContent = 'Price: $' + gameData.price;
     li.appendChild(priceDiv);
 
     return li;
