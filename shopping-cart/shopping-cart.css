@@ -1,0 +1,33 @@
+body{
+    background-color:bisque;
+    font-family: 'Barlow', sans-serif;
+}
+
+table {
+    width: 500px;
+    margin: auto;
+}
+
+td, th {
+    text-align: center;
+    border: 0.5px solid black;
+    border-radius: 5px;
+    background-color: white;
+}
+
+h1{
+    font-family: 'ZCOOL XiaoWei', serif;
+    text-align: center;
+}
+
+#button{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+button{
+    height:20px; 
+    width:500px;  
+
+}
