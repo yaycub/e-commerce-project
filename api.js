@@ -37,15 +37,15 @@ export const gamesList = [
 ];
 
 export const cart = [{
-    id: 'apple',
+    id: 'skyrim',
     quantity: 2
 }, {
-    id: 'banana',
+    id: 'borderlands',
     quantity: 5
 }, {
-    id: 'mango',
+    id: 'super-mario',
     quantity: 1
 }, {
-    id: 'orange',
+    id: 'space-harrier',
     quantity: 10
 }];

@@ -1,8 +1,8 @@
 // IMPORT MODULES under test here:
 // import example from '../src/example.js';
 import renderGames from '../products/render-games.js';
-// import { cart } from '../api.js';
-
+import { findById } from '../common/utils.js';
+ 
 const test = QUnit.test;
 
 test('Render Games test', function(assert) {
@@ -27,4 +27,35 @@ test('Render Games test', function(assert) {
     //Assert
     // Make assertions about what is expected valid result
     assert.equal(html, expected);
+});
+
+test('returns an object when a matching id is found', function(assert) {
+    //Arrange
+    // Set up your parameters and expectations
+    const skyrim = [{
+        id: 'skyrim',
+        name: 'Skyrim',
+        image: '/assets/skyrim.png',
+        description: 'An open-world Action RPG',
+        category: 'RPG',
+        price: 40
+    }];
+
+    const expected = {
+        id: 'skyrim',
+        name: 'Skyrim',
+        image: '/assets/skyrim.png',
+        description: 'An open-world Action RPG',
+        category: 'RPG',
+        price: 40
+    };
+
+    //Act 
+    // Call the function you're testing and set the result to a const
+
+    const result = findById(skyrim, 'skyrim');
+
+    //Assert
+    // Make assertions about what is expected valid result
+    assert.deepEqual(result, expected);
 });
