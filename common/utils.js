@@ -13,3 +13,15 @@ export const calcLineItem = (quantity, amount) => {
     return prettyTotal;
 };
 
+export const calcOrderItem = (cartArr, gameArr) => {
+    let orderTotal = 0;
+
+    for (let i = 0; i < cartArr.length; i++){
+        const cartItem = cartArr[i];
+        const game = findById(gameArr, cartItem.id);
+        const cartItemTotal = calcLineItem(cartItem.quantity, game.price);
+        orderTotal += cartItemTotal;
+    }
+    
+    return orderTotal;
+};
