@@ -2,6 +2,7 @@
 // import example from '../src/example.js';
 import renderGames from '../products/render-games.js';
 import { findById } from '../common/utils.js';
+import { calcLineItem } from '../common/utils.js';
  
 const test = QUnit.test;
 
@@ -54,6 +55,24 @@ test('returns an object when a matching id is found', function(assert) {
     // Call the function you're testing and set the result to a const
 
     const result = findById(skyrim, 'skyrim');
+
+    //Assert
+    // Make assertions about what is expected valid result
+    assert.deepEqual(result, expected);
+});
+
+test('takes quantity and amount then returns a rounded amount', function(assert) {
+    //Arrange
+    // Set up your parameters and expectations
+    const quantity = 5;
+    const amount = 5.99;
+    
+    const expected = 29.95;
+
+    //Act 
+    // Call the function you're testing and set the result to a const
+
+    const result = calcLineItem(quantity, amount);
 
     //Assert
     // Make assertions about what is expected valid result

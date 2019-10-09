@@ -5,3 +5,10 @@ export const findById = (gameData, someString) => {
         }
     }
 };
+
+export const calcLineItem = (quantity, amount) => {
+    const total = quantity * amount;
+    const prettyTotal = Math.round(total * 100) / 100;
+
+    return prettyTotal;
+};
