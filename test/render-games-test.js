@@ -3,6 +3,7 @@
 import renderGames from '../products/render-games.js';
 import { findById } from '../common/utils.js';
 import { calcLineItem } from '../common/utils.js';
+import { renderShoppingCart } from '../shopping-cart/render-shopping-cart.js';
  
 const test = QUnit.test;
 
@@ -77,4 +78,34 @@ test('takes quantity and amount then returns a rounded amount', function(assert)
     //Assert
     // Make assertions about what is expected valid result
     assert.deepEqual(result, expected);
+});
+
+test('takes two arrays and returns HTML td', function(assert) {
+    //Arrange
+    // Set up your parameters and expectations
+    const gameData = {
+        id: 'skyrim',
+        name: 'Skyrim',
+        image: '/assets/skyrim.png',
+        description: 'An open-world Action RPG',
+        category: 'RPG',
+        price: 40
+    };
+
+    const cartData = {
+        id: 'skyrim',
+        quantity: 2
+    };
+    
+    const expected = '<tr><td>Skyrim</td><td>2</td><td>$40</td><td>$80</td></tr>';
+
+    //Act 
+    // Call the function you're testing and set the result to a const
+
+    const dom = renderShoppingCart(gameData, cartData);
+    const html = dom.outerHTML;
+
+    //Assert
+    // Make assertions about what is expected valid result
+    assert.deepEqual(html, expected);
 });

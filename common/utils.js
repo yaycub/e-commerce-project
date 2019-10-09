@@ -12,3 +12,4 @@ export const calcLineItem = (quantity, amount) => {
 
     return prettyTotal;
 };
+
