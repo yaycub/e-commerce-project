@@ -1,4 +1,3 @@
-// Initializing state
 import { gamesList } from '../api.js';
 import { cart } from '../api.js';
 import { findById } from '../common/utils.js';
