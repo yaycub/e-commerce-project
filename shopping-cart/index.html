@@ -5,9 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./shopping-cart.css">
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Barlow&display=swap" rel="stylesheet">
+    <title>VGL</title>
 </head>
 <body>
-    
+    <h1>Shopping Cart</h1>
+    <div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../products/index.html">Our Games</a></li>
+                <li><a href="index.html">Shopping Cart</a></li>
+            </ul>
+        </nav>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th class="align-left">Game</th>
+                <th>Qty</th>
+                <th>Price</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th></th>
+                <th></th>
+                <th>Order Total:</th>
+                <th id="order-total-cell"></th>
+            </tr>
+        </tfoot>
+        
+    </table>
+    <div id="button">
+        <button>Place Order</button>
+    </div>
+    <script type="module" src="shopping-cart.js"></script>
 </body>
 </html>

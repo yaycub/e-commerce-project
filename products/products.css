@@ -12,6 +12,37 @@ h1{
     justify-content: space-evenly;
     list-style: none;
     padding-left: 0;
+    flex-wrap: wrap;
+}
+
+ul{
+    padding-left: 0;
+    margin-bottom: 10px;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 30px;
+    width: 100%;
+}
+
+nav{
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    font-family: 'Barlow', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+a:hover{
+    background-color: black;
+    color: bisque;
 }
 
 #game-list{

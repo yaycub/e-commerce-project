@@ -1,0 +1,56 @@
+body{
+    background-color:bisque;
+    font-family: 'Barlow', sans-serif;
+}
+
+ul{
+    padding-left: 0;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    margin-bottom: 10px;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 30px;
+    width: 100%;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+a:hover{
+    background-color: black;
+    color: bisque;
+}
+
+table {
+    width: 500px;
+    margin: auto;
+}
+
+td, th {
+    text-align: center;
+    border: 0.5px solid black;
+    border-radius: 5px;
+    background-color: white;
+}
+
+h1{
+    font-family: 'ZCOOL XiaoWei', serif;
+    text-align: center;
+}
+
+#button{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+button{
+    height:20px; 
+    width:500px;  
+
+}

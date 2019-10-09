@@ -1,0 +1,28 @@
+body{
+        background-color:bisque;
+    }
+
+h1{
+    font-family: 'ZCOOL XiaoWei', serif;
+    text-align: center;
+}
+
+section{
+    text-align: center;
+    font-family: 'Barlow', sans-serif;
+    margin: 50px;
+}
+
+a{
+    background-color: black;
+    padding: 10px;
+    text-decoration: none;
+    color: bisque;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+a:hover{
+    background-color: bisque;
+    color: black;
+}
