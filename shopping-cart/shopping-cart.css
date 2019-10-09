@@ -3,6 +3,29 @@ body{
     font-family: 'Barlow', sans-serif;
 }
 
+ul{
+    padding-left: 0;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    margin-bottom: 10px;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 30px;
+    width: 100%;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+a:hover{
+    background-color: black;
+    color: bisque;
+}
+
 table {
     width: 500px;
     margin: auto;
