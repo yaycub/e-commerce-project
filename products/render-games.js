@@ -50,11 +50,16 @@ export default (gameData) => {
                 id: gameData.id,
                 quantity: 1
             };
+
             cart.push(cartItem);
+       
         } else {
             cartItem.quantity++;
         }
+        let serializedCartItem = JSON.stringify(cart);
+        localStorage.setItem('cart', serializedCartItem);
 
+        console.log(cart);
     });
 
     return li;
