@@ -12,7 +12,7 @@ if (!cartData) {
     orderButton.disabled = true;
 } else {
     orderButton.addEventListener('click', () => {
-        alert(JSON.stringify(cart, true, 2));
+        alert('Order placed:\n' + JSON.stringify(cart, true, 2));
         localStorage.removeItem('cart');
         window.location = '../index.html';
     }
