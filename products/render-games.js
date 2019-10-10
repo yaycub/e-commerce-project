@@ -58,8 +58,6 @@ export default (gameData) => {
         }
         let serializedCartItem = JSON.stringify(cart);
         localStorage.setItem('cart', serializedCartItem);
-
-        console.log(cart);
     });
 
     return li;
