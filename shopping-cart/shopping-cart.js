@@ -20,13 +20,16 @@ if (!cartData) {
 }
 
 
-for (let i = 0; i < cart.length; i++) {
-    const cartObj = cart[i];
-    const game = findById(gamesList, cartObj.id);
-    const domChange = renderShoppingCart(game, cartObj);
+if (cartData) {
+    for (let i = 0; i < cart.length; i++) {
+        const cartObj = cart[i];
+        const game = findById(gamesList, cartObj.id);
+        const domChange = renderShoppingCart(game, cartObj);
 
-    tBody.appendChild(domChange);
+        tBody.appendChild(domChange);
+
+        const orderTotal = calcOrderItem (cart, gamesList);
+        orderTotalCell.textContent = '$' + orderTotal;
+    }
 }
 
-const orderTotal = calcOrderItem (cart, gamesList);
-orderTotalCell.textContent = '$' + orderTotal;
