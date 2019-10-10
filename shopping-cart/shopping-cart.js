@@ -15,8 +15,7 @@ if (!cartData) {
         alert('Order placed:\n' + JSON.stringify(cart, true, 2));
         localStorage.removeItem('cart');
         window.location = '../index.html';
-    }
-    );
+    });
 }
 
 
