@@ -8,12 +8,16 @@ const localCartData = localStorage.getItem('cart');
 const parsedCart = JSON.parse(localCartData);
 const orderButton = document.getElementById('order-button');
 
+const clearCart = () => {
+    localStorage.removeItem('cart');
+};
+
 if (!localCartData) {
     orderButton.disabled = true;
 } else {
     orderButton.addEventListener('click', () => {
         alert('Order placed:\n' + JSON.stringify(parsedCart, true, 2));
-        localStorage.removeItem('cart');
+        clearCart();
         window.location = '../index.html';
     });
 }
