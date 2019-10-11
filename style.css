@@ -66,12 +66,12 @@ content{
 
 .hero{
     /* font-family: 'ZCOOL XiaoWei', serif; */
-    background-image: url('./assets/herobackgound.jpg');
+    background-image: url('./assets/hero2.jpg');
     height: 200px;
     width: 600px;
     margin-top: 10px;
     margin-left: 10px;
-    color: black;;
+    color: bisque;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -119,4 +119,6 @@ content{
 #skyrim, #borderland, #mario, #space-harrier{
     height: 250px;
     border-radius: 5px;
+    border: 1px solid bisque;
+    margin: 1px;
 }
