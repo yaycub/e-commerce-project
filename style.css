@@ -76,7 +76,7 @@ content{
     justify-content: center;
     align-items: center;
     font-size: 55px;
-    border: 3px solid white;
+    border: 3px solid black;
     border-radius: 5px;
 }
 .vgl{
@@ -92,9 +92,10 @@ content{
 .box{
     height: 275px;
     width: 275px;
-    border:2px solid white;
+    background-color: black;
+    color: bisque;
     border-radius: 5px;
-    margin: 10px;
+    margin: 14px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -103,14 +104,14 @@ content{
 
 .text-box{
     text-align: justify;
-    border: 2px solid white;
     border-radius: 5px;
     margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
     width: 300px;
     height: 795px;
-    background-color: bisque;
+    background-color: black;
+    color: bisque;
     font-size: 16px;
     padding: 6px;
 }
