@@ -1,5 +1,7 @@
 import { findById } from '../common/utils.js';
 
+const getCart = () => JSON.parse(localStorage.getItem('cart'));
+
 export default (gameData) => {
     const li = document.createElement('li');
     li.id = 'game-list';
@@ -35,10 +37,10 @@ export default (gameData) => {
     addButton.textContent = 'Add';
     li.appendChild(addButton);
     addButton.addEventListener('click', () => {
-        const localData = localStorage.getItem('cart');
+        const localData = getCart();
         let cart;
         if (localData){
-            cart = JSON.parse(localData);
+            cart = localData;
         } 
         else {
             cart = [];
