@@ -1,28 +1,91 @@
-body{
-        background-color:bisque;
-    }
-
-h1{
-    font-family: 'ZCOOL XiaoWei', serif;
-    text-align: center;
+html, body{
+    height: 100%;
+    width: 0 auto;
+    font-family: 'Barlow', sans-serif;
+    background-color: bisque;
 }
 
-section{
-    text-align: center;
-    font-family: 'Barlow', sans-serif;
-    margin: 50px;
+header{
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: black;
+    border-bottom: 2px solid black;
+    margin-bottom: 10px;
+}
+
+img{
+    height: 50px;
+    border-radius: 50px;
+    background-color: bisque;
+    margin-left: 10px;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+li{
+    padding: 10px;
 }
 
 a{
-    background-color: black;
-    padding: 10px;
     text-decoration: none;
     color: bisque;
-    border: 2px solid black;
-    border-radius: 5px;
 }
 
 a:hover{
     background-color: bisque;
     color: black;
+}
+
+content{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    width: 900px;
+    margin: 0 auto;
+    background-color: lightgray;
+    height: 100%;
+}
+
+
+
+.hero{
+    font-family: 'ZCOOL XiaoWei', serif;
+    background-image: url('./assets/herobackgound.jpg');
+    height: 200px;
+    width: 480px;
+    margin-top: 10px;
+    margin-left: 10px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 55px;
+    border: 6px solid black;
+    border-radius: 5px;
+}
+
+.text-box{
+    border: 2px solid black;
+    margin-left: 30px;
+    width: 200px;
+    height: 100%;
+    background-color: grey;
+}
+
+.products{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box{
+    height: 200px;
+    width: 200px;
+    border:2px solid white;
 }
