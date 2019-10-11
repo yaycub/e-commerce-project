@@ -1,3 +1,5 @@
+import { findById } from '../common/utils.js';
+
 export default (gameData) => {
     const li = document.createElement('li');
     li.id = 'game-list';
@@ -32,6 +34,31 @@ export default (gameData) => {
     addButton.id = gameData.id;
     addButton.textContent = 'Add';
     li.appendChild(addButton);
+    addButton.addEventListener('click', () => {
+        const localData = localStorage.getItem('cart');
+        let cart;
+        if (localData){
+            cart = JSON.parse(localData);
+        } 
+        else {
+            cart = [];
+        }
+        let cartItem = findById(cart, gameData.id);
+
+        if (!cartItem){
+            cartItem = {
+                id: gameData.id,
+                quantity: 1
+            };
+
+            cart.push(cartItem);
+       
+        } else {
+            cartItem.quantity++;
+        }
+        let serializedCartItem = JSON.stringify(cart);
+        localStorage.setItem('cart', serializedCartItem);
+    });
 
     return li;
 };
