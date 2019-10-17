@@ -1,23 +1,23 @@
 import { calcLineItem } from '../common/utils.js';
  
 export const renderShoppingCart = (gameArr, cartArr) => {
-    const cartTr = document.createElement('tr');
+    const productRow = document.createElement('tr');
     
-    const gameName = document.createElement('td');
-    gameName.textContent = gameArr.name;
-    cartTr.appendChild(gameName);
+    const productName = document.createElement('td');
+    productName.textContent = gameArr.name;
+    productRow.appendChild(productName);
 
-    const quantityAmount = document.createElement('td');
-    quantityAmount.textContent = cartArr.quantity;
-    cartTr.appendChild(quantityAmount);
+    const productQuantity = document.createElement('td');
+    productQuantity.textContent = cartArr.quantity;
+    productRow.appendChild(productQuantity);
 
     const unitPrice = document.createElement('td');
     unitPrice.textContent = '$' + gameArr.price;
-    cartTr.appendChild(unitPrice);
+    productRow.appendChild(unitPrice);
 
-    const totalPrice = document.createElement('td');
-    totalPrice.textContent = '$' + calcLineItem(cartArr.quantity, gameArr.price);
-    cartTr.appendChild(totalPrice);
+    const subtotalPrice = document.createElement('td');
+    subtotalPrice.textContent = '$' + calcLineItem(cartArr.quantity, gameArr.price);
+    productRow.appendChild(subtotalPrice);
 
-    return cartTr;
+    return productRow;
 };
